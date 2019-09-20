@@ -15,7 +15,7 @@ num_output = [40, 40, 40, 40, 40]
 tensorboard = TensorBoard(log_dir=os.path.join('logs'))
 checkpoint=ModelCheckpoint(
     #  filepath=os.path.join('checkpoint', 'inceptionV3.{epoch:03d}-{loss:.2f}-{acc:.2f}-{val_loss:.2f}-{val_acc:.2f}.hdf5'),
-        filepath=os.path.join('checkpoint1', 'inceptionV3.{epoch:03d}-{out1_acc:.3f}-{out2_acc:.3f}-{out3_acc:.3f}-{out4_acc:.3f}'
+        filepath=os.path.join('checkpoint', 'inceptionV3.{epoch:03d}-{out1_acc:.3f}-{out2_acc:.3f}-{out3_acc:.3f}-{out4_acc:.3f}'
                                             +'-{out5_acc:.3f}.hdf5'),
         verbose=1,
         save_best_only=False,
